@@ -1,0 +1,136 @@
+main {
+  color: white;
+  font-family: 'Franklin Gothic Book', arial;
+  margin: 0 auto;
+  max-width: 1200px;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 150px
+    50px
+    1fr
+    800px
+    300px;
+  grid-template-areas:
+    "my-header my-header my-header"
+    "my-nav my-nav my-nav"
+    "my-section my-section my-aside"
+    "my-footer my-footer my-footer"
+}
+ 
+header {
+  grid-area: my-header;
+  color: #F47920;
+  background-size: 170px, cover;
+  background-color: #B3B3B3;
+  padding: 0 30px; 
+}
+ 
+nav {
+  grid-area: my-nav;
+  background-color: #083a59;
+}
+ 
+aside {
+  grid-area: my-aside;
+  background-color: #F0B429;
+  padding: 10px;
+  margin: 5px 5px 5px 0;
+}
+ 
+section {
+  grid-area: my-section;
+  background-color: #808080;
+  padding: 0 10px;
+}
+
+footer {
+  color: black;
+  grid-area: my-footer;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+footer div{
+	margin: 5px 0;
+	padding: 0 5px;
+}
+ 
+@media (min-width: 600px) and (max-width: 1500px) {
+  main {
+    grid-template-columns: 350px 1fr 350px;
+    grid-template-rows: 170px
+      50px
+      1fr
+      150px;
+    grid-template-areas:
+      "my-header my-header my-header"
+      "my-nav my-nav my-nav"
+      "my-section my-section my-aside"
+      "my-footer my-footer my-footer"
+  }
+}
+
+@media (min-width: 1501px) {
+  main {
+    grid-template-columns: 350px 1fr 350px;
+    grid-template-rows: 200px
+      1fr
+      150px;
+    grid-template-areas:
+      "my-header my-header my-header"
+      "my-nav my-section my-aside"
+      "my-footer my-footer my-footer"
+  }
+}
+
+#menu ul {
+ list-style:none;
+ margin:0;
+ padding:0;
+}
+
+#menu ul a {
+ display:block;
+ color:#fff;
+ text-decoration:none;
+ font-weight:400;
+ font-size:20px;
+ padding:10px; 
+ text-transform:uppercase;
+ letter-spacing:1px;
+}
+
+#menu ul li {
+ position:relative;
+ float: left;
+ margin:4px;
+ padding:0;
+}
+
+#menu ul li:hover {
+ background:#5b78a7;
+}
+
+#menu ul ul {
+ display:none;
+ position:absolute;
+ top:100%;
+ left:0;
+ background-color: #005883;
+ padding:0;
+}
+
+#menu ul ul li {
+ float:none;
+ width:150px
+}
+
+#menu ul ul a {
+ line-height:120%;
+ padding:10px 15px;
+}
+
+#menu ul li:hover > ul {
+ display:block;
+}

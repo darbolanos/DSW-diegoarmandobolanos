@@ -45,7 +45,7 @@ section {
 }
 
 footer {
-  color: black;
+  background-color: #005883;
   grid-area: my-footer;
   display: grid;
   grid-template-columns: 33% 33% 33%;
@@ -133,4 +133,10 @@ footer div{
 
 #menu ul li:hover > ul {
  display:block;
+}
+
+.autor{
+  border-radius: 5px;
+  text-align: center;
+  background-color: #005883;
 }

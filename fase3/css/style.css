@@ -136,7 +136,10 @@ footer div{
 }
 
 .autor{
+  width: 300px;
   border-radius: 5px;
   text-align: center;
   background-color: #005883;
+  padding: 10px;
+  margin-bottom: 10px;
 }

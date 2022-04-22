@@ -143,3 +143,7 @@ footer div{
   padding: 10px;
   margin-bottom: 10px;
 }
+
+.card-text{
+  color: black;
+}

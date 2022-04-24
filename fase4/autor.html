@@ -12,30 +12,51 @@
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v13.0" nonce="2Qr0pA0A"></script>
     <main>
         <header>Pagina</header>        
-        <nav id="menu">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Temas</a>
-                    <ul>
-                        <li><a href="etiquetas.html">Etiquetas Básicas de HTML</a></li>
-                        <li><a href="atributos.html">Atributos y valores</a></li>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">DArBolaños</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Temas
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="etiquetas.html">Etiquetas Básicas de HTML</a></li>
+                      <li><a class="dropdown-item" href="atributos.html">Atributos y valores</a></li>
                     </ul>
-                </li>
-                <li><a href="#">Recursos Multimedia</a>
-                    <ul>
-                        <li><a href="multimedia1.html">Multimedia 1</a></li>
-                        <li><a href="multimedia2.html">Multimedia 2</a></li>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Recursos Multimedia
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="multimedia1.html">Multimedia 1</a></li>
+                      <li><a class="dropdown-item" href="multimedia2.html">Multimedia 2</a></li>
                     </ul>
-                </li>
-                <li><a href="#">Aprendizaje</a>
-                    <ul>
-                        <li><a href="aprendizaje1.html">Aprendizaje 1</a></li>
-                        <li><a href="aprendizaje2.html">Aprendizaje 2</a></li>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Aprendizaje
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="aprendizaje1.html">Aprendizaje 1</a></li>
+                      <li><a class="dropdown-item" href="aprendizaje2.html">Aprendizaje 2</a></li>
                     </ul>
-                </li>
-                <li><a href="autor.html">Autor</a></li>
-            </ul>
-        </nav>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="autor.html">Autor</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         <section>
             <article>
                 <h2>AUTOR</h2>

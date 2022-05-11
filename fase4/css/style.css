@@ -19,10 +19,11 @@ main {
 }
  
 header {
+  background-image: url("../img/cabecera.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   grid-area: my-header;
-  color: #F47920;
-  background-size: 170px, cover;
-  background-color: #B3B3B3;
   padding: 0 30px; 
 }
  
@@ -45,7 +46,10 @@ section {
 }
 
 footer {
-  background-color: #005883;
+  background-image: url("../img/pie.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   grid-area: my-footer;
   display: grid;
   grid-template-columns: 33% 33% 33%;
